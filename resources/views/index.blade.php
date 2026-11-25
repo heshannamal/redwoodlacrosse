@@ -19,7 +19,7 @@
     <!-- SCHEDULE SECTION -->
     <div class="container mb-4">
         <a href="{{ URL('/schedule') }}">
-            <img src="{{ url('public/images/Schedule.png') }}" class="section-img"
+            <img src="{{ url('public/images/Schedule-Edited.png') }}" class="section-img"
                 alt="">
         </a>
     </div>
