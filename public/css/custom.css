@@ -1,0 +1,2188 @@
+h6.fw-bold.mb-3.ft-title {
+    font-family: Racing Sans One;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    letter-spacing: 0%;
+}
+
+.main-header {
+    font-family: Racing Sans One;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 48px;
+    leading-trim: CAP_HEIGHT;
+    line-height: 52px;
+    letter-spacing: 1px;
+    vertical-align: bottom;
+}
+
+.sub-header {
+    font-family: Racing Sans One;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    vertical-align: bottom;
+}
+
+
+/* team roster css start  */
+
+/* Title */
+.teams-title {
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* Main Card */
+.teams-card {
+    width: 560px;
+    height: 430px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    overflow: visible;
+    position: relative;
+}
+
+/* decorative left dotted strip (black squares) */
+.teams-card-decor {
+    position: absolute;
+    left: -6px;
+    /* slightly outside card edge like the screenshot */
+    top: 18px;
+    width: 14px;
+    height: calc(100% - 36px);
+    background-image:
+        linear-gradient(#000 0 0);
+    /* create repeating black squares using repeating-linear-gradient and background-size */
+    background:
+        linear-gradient(to bottom, transparent 0 8px, black 8px 12px);
+    background-repeat: repeat-y;
+    background-position: left top;
+    background-size: 4px 12px;
+    border-radius: 2px;
+    opacity: 0.95;
+    pointer-events: none;
+    /* Use an overlay pseudo-grid of squares using multiple backgrounds */
+    box-shadow: none;
+}
+
+/* Image wrapper */
+.teams-image-wrapper {
+    width: 536px;
+    height: 323px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* Image */
+.teams-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Title below image */
+.team-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* Coach text */
+.team-coach {
+    font-size: 14px;
+    color: #6f6f6f;
+}
+
+/* Roster button */
+.roster-btn {
+    font-size: 14px;
+    font-weight: 700;
+    color: #CF1D2B;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.roster-icon {
+    width: 16px;
+    margin-right: 6px;
+}
+
+/* Hover lift */
+.teams-card:hover {
+    transform: translateY(-6px);
+    transition: transform .22s ease;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .teams-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .teams-image-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .teams-image {
+        height: auto;
+    }
+
+    .teams-card-decor {
+        display: none;
+    }
+
+
+
+
+}
+
+/* tem roster css end  */
+
+
+/* tem css start */
+
+.player-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.player-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.player-number {
+    width: 55px;
+    height: 55px;
+    background: #111;
+    color: #fff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.player-meta small {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.full-bio {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.coach-card.list {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #d92323;
+}
+
+/* tem css end  */
+
+
+/* coaching-staff css start  */
+
+
+.coach-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: 0.2s ease;
+}
+
+.coach-card img {
+    border-radius: 12px;
+    height: 260px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.coach-name {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.coach-role {
+    color: #7d7d7d;
+    font-size: 13px;
+}
+
+.coaching-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+
+/* ===========================
+       HIRING SECTION
+    =========================== */
+
+.hiring-section {
+    position: relative;
+    padding: 6.5rem 0;
+    overflow: visible;
+}
+
+/* Slanted panel background (right side only) */
+.hiring-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 130%;
+    height: 110%;
+    background: #EBEEF3;
+    clip-path: polygon(0 0, 100% 29%, 100% 85%, 0 85%);
+    z-index: 0;
+}
+
+/* Content sits above the panel */
+.hiring-content {
+    position: relative;
+    z-index: 5;
+}
+
+/* Player image */
+.hiring-player {
+    display: block;
+    max-width: 460px;
+    width: 36vw;
+    min-width: 240px;
+    margin-left: -12px;
+    z-index: 6;
+}
+
+/* Hiring text */
+.hiring-title {
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 700;
+    font-size: clamp(28px, 4.2vw, 44px);
+}
+
+.hiring-title span {
+    color: #C8202B;
+}
+
+.hiring-desc {
+    font-family: "Rubik", sans-serif;
+    color: #4b4b4b;
+    margin-bottom: .25rem;
+    font-size: 15px;
+}
+
+/* Right framed photo */
+.hiring-photo {
+    display: inline-block;
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    max-width: 420px;
+    width: 30vw;
+    min-width: 260px;
+}
+
+.hiring-photo img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* MOBILE RESPONSIVE */
+/* @media (max-width: 991px) {
+    .hiring-section {
+        padding: 3.5rem 0;
+    }
+
+    .hiring-bg {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+
+    .hiring-player {
+        margin: 0 auto 1.2rem;
+        width: 60%;
+        max-width: 320px;
+    }
+
+    .hiring-photo {
+        margin-top: 1rem;
+        width: 70%;
+        max-width: 420px;
+    }
+
+    .hiring-title,
+    .hiring-desc {
+        text-align: center;
+    }
+} */
+
+@media (max-width: 575px) {
+    .hiring-title {
+        font-size: 26px;
+    }
+
+    .hiring-player {
+        width: 70%;
+    }
+}
+
+
+/* coaching-staff css end  */
+
+
+
+
+/* schedule css start  */
+
+
+/* Title */
+.schedule-title {
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+/* Table Styles */
+.schedule-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+    font-size: 15px;
+}
+
+.schedule-table thead th {
+    background: #F4F6F9;
+    font-weight: 600;
+    color: #444;
+    padding: 14px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.schedule-table tbody tr {
+    background: #ffffff;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.schedule-table tbody tr td {
+    padding: 14px;
+    vertical-align: middle;
+}
+
+/* Team icons */
+.team-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin: 0 4px;
+}
+
+/* Remove last row bottom border */
+.schedule-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* HEADER BACKGROUND */
+.schedule-table thead th {
+    background: #EDF0F5;
+    font-weight: 700;
+    padding: 16px 14px;
+    border-bottom: 2px solid #dfe3e8;
+    position: relative;
+}
+
+/* TOP PERFORATED DESIGN (Figma style) */
+.schedule-table thead::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    /* moves design above header */
+    left: 0;
+    width: 100%;
+    height: 12px;
+
+    /* White dash rectangles */
+    background-image:
+        repeating-linear-gradient(to right,
+            #EDF0F5 0 8px,
+            /* dash width */
+            transparent 8px 14px
+            /* spacing */
+        );
+
+    opacity: 1;
+    z-index: 10;
+}
+
+/* Needed to allow ::before to position correctly */
+.schedule-table thead {
+    position: relative;
+    display: table-header-group;
+}
+
+/* schedule css end  */
+
+
+/* shedule records css start  */
+
+.schedule-row {
+    border-bottom: 1px solid #e6edf5;
+    font-family: "Rubik", sans-serif;
+}
+
+.schedule-row td {
+    padding: 14px 12px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+}
+
+.schedule-date {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.schedule-game {
+    font-weight: 500;
+}
+
+.schedule-game .team {
+    font-weight: 600;
+}
+
+.schedule-game .opponent {
+    font-weight: 600;
+}
+
+.schedule-game .vs {
+    margin: 0 6px;
+    font-weight: 700;
+    color: #777;
+}
+
+.schedule-time,
+.schedule-day {
+    white-space: nowrap;
+}
+
+.schedule-location {
+    color: #555;
+}
+
+.schedule-row:hover {
+    background-color: #f8fafc;
+}
+
+/* shedule records css end  */
+
+
+
+/* news css start  */
+
+
+/* NEWS LIST LEFT SIDE */
+.news-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    gap: 20px;
+    display: flex;
+}
+
+/* Desktop image styles */
+.news-img {
+    width: 230px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Text Area */
+.news-body {
+    flex: 1;
+}
+
+.news-date {
+    font-size: 12px;
+    color: #5b5b5b;
+}
+
+.news-heading {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.news-text {
+    font-size: 14px;
+    color: #444;
+}
+
+.news-readmore {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+
+.news-readmore:hover {
+    color: #CF1D2B;
+}
+
+/* Alumni Box */
+.alumni-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.alumni-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.alumni-underline {
+    width: 100%;
+    height: 6px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.alumni-underline::before {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #CF1D2B;
+    border-radius: 10px;
+    margin-right: 6px;
+}
+
+.alumni-underline::after {
+    content: "";
+    flex-grow: 1;
+    height: 4px;
+    background: #262626;
+    border-radius: 10px;
+}
+
+.alumni-item {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.alumni-img {
+    width: 90px;
+    height: 75px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.alumni-date {
+    font-size: 12px;
+    color: #6a6a6a;
+    margin-bottom: 4px;
+}
+
+.alumni-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    line-height: 1.3;
+}
+
+/* -------------------------------------- */
+/*             MOBILE FIXES               */
+/* -------------------------------------- */
+@media (max-width: 768px) {
+
+    /* Stack card vertically */
+    .news-card {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    /* Full width image */
+    .news-img {
+        width: 100%;
+        height: 180px;
+        border-radius: 12px;
+    }
+
+    .news-heading {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    .news-text {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .news-readmore {
+        font-size: 13px;
+    }
+
+    /* Alumni Section */
+    .alumni-img {
+        width: 75px;
+        height: 65px;
+    }
+
+    .alumni-text {
+        font-size: 13px;
+    }
+}
+
+
+/* news css end  */
+
+
+/* start news  */
+
+
+
+/* =======================
+           ARTICLE IMAGE
+        ======================= */
+.news-main-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* =======================
+           META ROW
+        ======================= */
+.news-meta {
+    font-size: 13px;
+    color: #6d6d6d;
+}
+
+.news-meta i {
+    margin-right: 6px;
+    color: #444;
+}
+
+.news-meta span {
+    margin-right: 18px;
+}
+
+/* =======================
+           ARTICLE BODY
+        ======================= */
+.news-body {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.75;
+    margin-top: 20px;
+}
+
+.news-body strong {
+    font-weight: 600;
+}
+
+/* =======================
+           SIDEBAR BOX
+        ======================= */
+.recent-box {
+    background: #ffffff;
+    border: 1px solid #e6e9ee;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Title */
+.recent-title {
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #262626;
+    margin-bottom: 10px;
+}
+
+/* Underline wrapper */
+.recent-underline {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+/* Red bar */
+.recent-underline .u-red {
+    width: 34px;
+    height: 4px;
+    background-color: #CF1D2B;
+    border-radius: 4px;
+}
+
+/* Black bar */
+.recent-underline .u-black {
+    flex: 1;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+}
+
+
+/* Recent item */
+.recent-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.recent-thumb {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.recent-date {
+    font-size: 12px;
+    color: #6d6d6d;
+}
+
+.recent-text {
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: -2px;
+}
+
+/* end news  */
+
+
+/* alumni css start  */
+
+.modal-full-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+    background: black;
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 48px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+    font-weight: bold;
+}
+
+.close-modal-btn:hover {
+    opacity: 0.7;
+}
+
+/* Card */
+.alumni-game-card {
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    background: #F9FAFC;
+    border: 2px solid #EBEEF3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+}
+
+.alumni-game-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.full-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.empty-img {
+    width: 90px;
+    opacity: .35;
+}
+
+.empty-text {
+    margin-top: 8px;
+    color: #7d7d7d;
+    font-size: 15px;
+}
+
+.filled {
+    background: none;
+    border: none;
+}
+
+/* ---------------- WAYS GET INVOLVED ---------------- */
+.involved-title-main {
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.involved-desc {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #555;
+}
+
+.involved-box img {
+    width: 65px;
+    margin-bottom: 15px;
+}
+
+.involved-box-title {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.involved-box-text {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ---------------- INQUIRY FORM ---------------- */
+/* Title */
+.alumni-form-title {
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.alumni-form-sub {
+    font-size: 15px;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+/* Form container */
+.alumni-form-box {
+    background: #ffffff;
+    padding: 40px 35px;
+    border-radius: 12px;
+    max-width: 850px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+}
+
+/* Inputs */
+.form-label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-input {
+    background: #F8F9FB;
+    border: 1px solid #E3E6EA;
+    border-radius: 6px;
+    height: 46px;
+    padding-left: 12px;
+    font-size: 14px;
+}
+
+textarea.form-input {
+    height: auto !important;
+    padding-top: 10px;
+}
+
+/* Checkbox section */
+.involvement-options label {
+    font-size: 14px;
+    color: #444;
+    cursor: pointer;
+}
+
+.involvement-options input {
+    margin-right: 6px;
+}
+
+/* Button */
+.send-btn {
+    background: #CF1D2B;
+    color: #fff;
+    font-family: "Racing Sans One";
+    padding: 10px 35px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: 0.25s;
+}
+
+.send-btn:hover {
+    background: #b21924;
+    transform: translateY(-2px);
+}
+
+/* alumni css end  */
+
+
+/* records css start  */
+
+.award-card {
+    background: #e8e9ea;
+    border-radius: 16px;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.award-inner {
+    background: white;
+    border-radius: 12px;
+    padding: 10px 0;
+    border: 1px solid #e4e5e9;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.award-header {
+    padding: 5px 10px 15px 10px;
+}
+
+.award-header img {
+    height: 36px;
+}
+
+.award-item {
+    padding: 24px 20px;
+    border-bottom: 1px solid #e4e5e9;
+    display: flex;
+    gap: 15px;
+}
+
+.award-item:last-child {
+    border-bottom: none;
+}
+
+.award-item img {
+    width: 60px;
+}
+
+.award-title {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.award-sub {
+    color: #555;
+    margin-top: -4px;
+}
+
+.award-year {
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+/* records css end  */
+
+/* historical session css start  */
+
+.media-card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+}
+
+.media-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.media-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.media-footer {
+    padding: 14px 16px;
+}
+
+.media-title {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.media-meta {
+    color: #666;
+    font-size: 14px;
+    display: flex;
+    gap: 14px;
+    margin-top: 4px;
+    align-items: center;
+}
+
+.media-meta i {
+    font-size: 15px;
+}
+
+/* historical session css end  */
+
+
+
+/* media albums css star  */
+
+.album-card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.2s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.album-img-wrapper {
+    position: relative;
+}
+
+.album-img-wrapper img {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+}
+
+/* DATE BADGE */
+.date-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.1;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.date-badge .day {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* ITEMS BADGE */
+.items-badge {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 13px;
+    border-radius: 8px;
+}
+
+.album-info {
+    padding: 14px 16px;
+}
+
+.album-title {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.album-school {
+    color: #555;
+    font-size: 15px;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* media albums css end  */
+
+
+
+/* media-album-single css start  */
+
+:root {
+    --thumb-size: 120px;
+    --thumb-gap: 12px;
+    --preview-height: 520px;
+    --container-max-width: 1400px;
+}
+
+body {
+    background: #f6f7f8;
+    color: #111;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.page-wrapper {
+    max-width: var(--container-max-width);
+    margin: 24px auto;
+}
+
+/* Header */
+.page-header h2 {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.meta-row {
+    color: #6b6f72;
+}
+
+/* layout */
+.left-col {
+    padding-right: 20px;
+}
+
+.right-col {
+    padding-left: 20px;
+}
+
+/* filter */
+.filter-row label {
+    min-width: 90px;
+}
+
+/* thumbnail grid */
+.thumb-grid {
+    display: grid;
+    grid-template-columns: repeat(5, var(--thumb-size));
+    gap: var(--thumb-gap);
+}
+
+.thumb {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(14, 20, 25, 0.04);
+    transition: transform .12s, box-shadow .12s;
+}
+
+.thumb:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 18px rgba(14, 20, 25, 0.08);
+}
+
+.thumb.selected {
+    outline: 4px solid rgba(0, 0, 0, 0.06);
+    transform: none;
+}
+
+.thumb .play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 32px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+}
+
+/* preview panel */
+.preview-panel {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.preview-wrap {
+    width: 100%;
+    height: var(--preview-height);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-wrap img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+.preview-wrap video {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* controls */
+.preview-controls {
+    width: 100%;
+    display: contents;
+    justify-content: space-between;
+    align-items: center;
+    color: #6b6f72;
+}
+
+.preview-controls .nav {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.icon-btn {
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: #fff;
+}
+
+.icon-btn i {
+    font-size: 16px;
+}
+
+/* page pagination */
+.thumb-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: #6b6f72;
+    gap: 8px;
+}
+
+
+.fullscreen-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    padding: 20px;
+}
+
+.fs-content {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fs-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+.fullscreen-modal img,
+.fullscreen-modal video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+
+.thumb-nav-btn,
+.preview-nav-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: #f1f1f1;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.thumb-nav-btn:hover,
+.preview-nav-btn:hover {
+    background: #111;
+    color: #fff;
+}
+
+.thumb-nav-btn:disabled,
+.preview-nav-btn:disabled {
+    opacity: 0.4;
+}
+
+/* FULLSCREEN IMAGE MODAL */
+.image-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+}
+
+.image-modal.show {
+    display: flex;
+}
+
+.image-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    color: #fff;
+}
+
+.modal-actions button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    margin-right: 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.image-modal-body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-modal-body img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Desktop: show desktop buttons, hide mobile buttons */
+@media (min-width: 992px) {
+    .header-actions-desktop {
+        display: flex !important;
+    }
+
+    .header-actions-mobile {
+        display: none !important;
+    }
+}
+
+/* Mobile: show mobile buttons, hide desktop buttons */
+@media (max-width: 992px) {
+
+    .header-actions-desktop {
+        display: none !important;
+    }
+
+    .header-actions-mobile {
+        display: flex !important;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Stack the layout */
+    .row-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-col {
+        order: 1;
+        padding-left: 0px;
+        margin-bottom: 16px;
+    }
+
+    .header-actions-mobile {
+        order: 2;
+        margin-bottom: 16px;
+    }
+
+    .filter-row-block {
+        order: 3;
+    }
+
+    .left-col {
+        order: 4;
+    }
+
+    .thumb-pagination {
+        order: 5;
+        margin-top: 15px;
+    }
+
+    /* Mobile preview height */
+    .preview-wrap {
+        height: 300px !important;
+    }
+
+    /* Mobile thumbnails */
+    .thumb-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 10px;
+    }
+
+    .thumb {
+        width: 100% !important;
+        height: 100px !important;
+    }
+}
+
+/* Small phones */
+@media (max-width: 550px) {
+    .thumb-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .preview-wrap {
+        height: 240px !important;
+    }
+}
+
+
+/* media-album-single css end  */
+
+
+/* profile css start  */
+
+.coaching-wrapper {
+    font-family: 'Rubik', sans-serif;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.coach-title {
+    text-align: center;
+    padding-bottom: 42px
+}
+
+.coach-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.coach-name.profile {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.coach-role {
+    font-size: 15px;
+    color: #6c6c6c;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.coach-text.profile {
+    font-size: 15px;
+    line-height: 1.55;
+    margin-bottom: 14px;
+    color: #2e2e2e;
+}
+
+.coach-divider {
+    width: 100%;
+    height: 1px;
+    background: #cfcfcf;
+    margin: 22px 0;
+    opacity: .5;
+}
+
+.contact-label {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.contact-text {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+/* profile css end  */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media (min-width: 2560px) {
+    .container {
+        max-width: 2200px;
+    }
+}
+
+@media (min-width: 3840px) {
+    .container {
+        max-width: 3000px;
+    }
+}
+
+@media (min-width: 5120px) {
+    .container {
+        max-width: 3800px;
+    }
+}
+
+/* ULTRA WIDE – 2K Screens */
+@media (min-width: 2560px) {
+
+    .navbar .container,
+    .navbar .container-fluid {
+        max-width: 2400px !important;
+    }
+
+    .navbar-brand img {
+        height: 110px;
+        /* make logo bigger */
+    }
+
+    .nav-link {
+        font-size: 22px !important;
+    }
+}
+
+/* 4K Screens */
+@media (min-width: 3840px) {
+
+    .navbar .container,
+    .navbar .container-fluid {
+        max-width: 3200px !important;
+    }
+
+    .navbar-brand img {
+        height: 130px;
+    }
+
+    .nav-link {
+        font-size: 26px !important;
+    }
+}
+
+/* 5K Screens – Your QA Requirement */
+@media (min-width: 5120px) {
+
+    .navbar .container,
+    .navbar .container-fluid {
+        max-width: 4200px !important;
+    }
+
+    .navbar-brand img {
+        height: 230px !important;
+    }
+
+    .nav-link {
+        font-size: 50px !important;
+        letter-spacing: 1.5px;
+        padding-right: 5rem !important;
+        padding-left: 5rem !important;
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        font-size: 50px;
+    }
+
+    li {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    button.btn.btn-danger.donate-btn.px-4 {
+        padding-top: 11px;
+        padding-bottom: 16px;
+        font-size: 4rem;
+
+    }
+
+    h6.fw-bold.mb-3.ft-title {
+        font-size: 4rem;
+    }
+
+    li.mb-2.footer {
+        font-size: 3rem;
+    }
+
+    p.mb-2.d-flex.gap-2.justify-content-center.justify-content-md-start.footer {
+        font-size: 3rem;
+    }
+
+    img.mb-3.footer-logo {
+        width: 339px;
+        height: 272px;
+    }
+
+    p.fw-bold.mb-2.footer {
+        font-size: 3rem;
+    }
+
+    p.text-center.text-muted.m-0 {
+        font-size: 3rem;
+    }
+
+
+    .border.p-2.rounded.d-flex.align-items-center.justify-content-center.footer {
+        width: 95px !important;
+        height: 80px !important;
+    }
+
+    img.footer-icon {
+        width: 89px !important;
+        height: 75px !important;
+    }
+
+    h4.sub-header.fw-bold.mb-4 {
+        font-size: 4rem;
+    }
+
+    h2.main-header.text-center.fw-bold.mb-2 {
+        font-size: 6rem;
+    }
+
+    p.text-center.mb-5 {
+        font-size: 3rem;
+    }
+
+    h2.sub-header.fw-bold.mb-4 {
+        font-size: 4rem;
+    }
+
+    h5.fw-bold.mb-0 {
+        font-size: 3rem;
+    }
+
+    .award-title {
+        font-size: 3rem;
+    }
+
+    .award-item {
+        font-size: 3rem;
+    }
+
+    /* news start  */
+
+    h2.text-center.mb-5.main-header {
+        font-size: 6rem;
+    }
+
+    img.news-img {
+        width: 55rem;
+        height: 35rem;
+    }
+
+    p.news-date {
+        font-size: 3rem;
+    }
+
+    h4.news-heading {
+        font-size: 3rem;
+    }
+
+    p.news-text {
+        font-size: 3rem;
+    }
+
+    a.news-readmore {
+        font-size: 3rem;
+    }
+
+    h5.alumni-title {
+        font-size: 4rem;
+    }
+
+    img.alumni-img {
+        width: 19rem;
+        height: 19rem;
+    }
+
+    p.alumni-date {
+        font-size: 3rem;
+    }
+
+    p.alumni-text {
+        font-size: 3rem;
+    }
+
+    /* news end  */
+
+    /* single news start */
+
+    h2.news-title {
+        font-size: 6rem;
+    }
+
+    img.news-main-img {
+        width: 150rem;
+        height: 47rem;
+    }
+
+    .news-meta.mb-3 {
+        font-size: 2rem;
+    }
+
+    .news-body {
+        font-size: 3rem;
+    }
+
+    h4.recent-title {
+        font-size: 4rem;
+    }
+
+    img.recent-thumb {
+        width: 25rem;
+        height: 20rem;
+    }
+
+    p.recent-date {
+        font-size: 3rem;
+    }
+
+    p.recent-text {
+        font-size: 3rem;
+    }
+
+    .news-body {
+        font-size: 3rem !important;
+    }
+
+    /* single news end  */
+
+
+    /* shedule start  */
+    h2.text-center.schedule-title.mb-4 {
+        font-size: 6rem;
+    }
+
+    th {
+        font-size: 4rem;
+    }
+
+    td {
+        font-size: 3rem;
+    }
+
+    /* shedule end  */
+
+    /* alumin start */
+    h2.alumni-games-title.main-header {
+        font-size: 6rem;
+    }
+
+    .alumni-game-card.filled {
+        height: 72rem;
+    }
+
+    .alumni-game-card.empty {
+        height: 72rem;
+    }
+
+    h2.involved-title-main {
+        font-size: 4rem;
+    }
+
+    p.involved-desc {
+        font-size: 3rem;
+        max-width: 78rem;
+    }
+
+
+    h5.involved-box-title {
+        font-size: 3rem;
+    }
+
+    p.involved-box-text {
+        font-size: 3rem;
+    }
+
+    h2.alumni-form-title.text-center {
+        font-size: 4rem;
+    }
+
+    p.alumni-form-sub.text-center {
+        font-size: 3rem;
+        max-width: 85rem;
+    }
+
+    /* alumin end  */
+
+
+    /* coaching-staff start  */
+    .coach-card {
+        padding: 26px;
+        border-radius: 24px;
+    }
+
+    .coach-card img {
+        height: 70rem;
+    }
+
+    .coach-name {
+        font-size: 24px;
+    }
+
+    .coach-role {
+        font-size: 18px;
+    }
+
+    .coaching-title {
+        font-size: 48px;
+        margin-bottom: 55px;
+    }
+
+
+    h2.coaching-title.sub-header {
+        font-size: 6rem !important;
+    }
+
+    .coach-name {
+        font-size: 4rem !important;
+    }
+
+    .coach-role {
+        font-size: 3rem !important;
+    }
+
+    h2.hiring-title {
+        font-size: 6rem !important;
+    }
+
+    .hiring-player {
+        max-width: 800px;
+    }
+
+    p.hiring-desc {
+        font-size: 3rem;
+    }
+
+    .hiring-photo {
+        max-width: 640px !important;
+    }
+
+    /* coaching-staff end  */
+
+
+    /* coaching-profile start  */
+
+    h2.coach-title.main-header {
+        font-size: 6rem;
+    }
+
+    .coaching-wrapper {
+        max-width: 170rem;
+    }
+
+    h3.coach-name.profile {
+        font-size: 5rem !important;
+    }
+
+    p.coach-text.profile {
+        font-size: 3rem;
+    }
+
+    p.contact-label {
+        font-size: 4rem;
+    }
+
+    p.contact-text {
+        font-size: 3rem;
+    }
+
+    /* coaching-profile end  */
+
+
+    /* teams-roster start  */
+
+
+    .teams-card {
+        width: 1350px;
+        height: 1000px;
+    }
+
+
+
+    .teams-image-wrapper {
+        width: 1321px;
+        height: 800px;
+    }
+
+    .teams-title {
+        font-size: 62px;
+        margin-bottom: 60px;
+    }
+
+    .team-title {
+        font-size: 28px;
+    }
+
+    .team-coach {
+        font-size: 20px;
+    }
+
+    .roster-btn {
+        font-size: 20px;
+    }
+
+    .roster-icon {
+        width: 20px;
+    }
+
+    h5.team-title {
+        font-size: 4rem;
+    }
+
+    h2.text-center.fw-bold.mb-5.teams-title {
+        font-size: 6rem;
+    }
+
+    p.team-coach.mb-0 {
+        font-size: 3rem;
+    }
+
+    a.roster-btn {
+        font-size: 3rem;
+    }
+
+    /* teams-roster end  */
+
+
+    /* historial seasons start  */
+    .media-card {
+        border-radius: 20px;
+    }
+
+    .media-card img {
+        width: 1321px;
+        height: 800px;
+    }
+
+    .media-footer {
+        padding: 28px 32px;
+    }
+
+    .media-title {
+        font-size: 28px;
+    }
+
+    .media-meta {
+        font-size: 20px;
+        gap: 24px;
+    }
+
+    .media-meta i {
+        font-size: 20px;
+    }
+
+    .media-title {
+        font-size: 4rem;
+    }
+
+    span {
+        font-size: 3rem;
+    }
+
+    /* historial seasons end  */
+
+
+
+
+
+
+
+    .album-card {
+        border-radius: 26px;
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+    }
+
+    .album-img-wrapper img {
+        height: 623px;
+    }
+
+    .album-info {
+        padding: 32px 36px;
+    }
+
+    .album-title {
+        font-size: 28px;
+    }
+
+    .album-school {
+        font-size: 22px;
+        gap: 12px;
+    }
+
+    .date-badge {
+        font-size: 19px;
+        padding: 12px 18px;
+        border-radius: 14px;
+    }
+
+    .date-badge .day {
+        font-size: 30px;
+    }
+
+    .items-badge {
+        font-size: 19px;
+        padding: 11px 20px;
+        border-radius: 12px;
+    }
+
+    .date-badge {
+        font-size: 3rem;
+    }
+
+    .album-title {
+        font-size: 3rem;
+    }
+
+    .album-school {
+        font-size: 3rem;
+    }
+
+    .items-badge {
+        font-size: 3rem;
+    }
+
+    /* media-album-single start  */
+
+
+
+
+    :root {
+        --container-max-width: 3000px;
+        --thumb-size: 190px;
+        --thumb-gap: 20px;
+        --preview-height: 880px;
+    }
+
+    .page-header h2 {
+        font-size: 56px;
+    }
+
+    .left-col {
+        padding-right: 80px;
+    }
+
+    .right-col {
+        padding-left: 80px;
+    }
+
+    .thumb {
+        border-radius: 20px;
+    }
+
+    .preview-controls .nav i {
+        font-size: 28px;
+    }
+
+    .fs-close {
+        font-size: 70px;
+        right: 70px;
+    }
+
+    .mb-2.text-muted.small {
+        font-size: 3rem;
+    }
+
+    h2.mb-1.sub-header {
+        font-size: 6rem;
+    }
+
+    .meta-row.small {
+        font-size: 3rem;
+    }
+
+    label.fw-semibold.mb-0 {
+        font-size: 4rem;
+    }
+
+    h2.mb-1.sub-header {
+
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+    /* media-album-single end  */
+}
